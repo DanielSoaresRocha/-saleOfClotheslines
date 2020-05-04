@@ -2,17 +2,18 @@ import React from 'react';
 
 import './styles.css'
 
+import logo from '../../assets/logo.png'
 import img from '../../assets/corda1.png'
 
 function Logon () {
     return (
         <div className="logon-container">
             <header className="logon-container">
-                <h1> EMPRESA CANAÃ VARAIS</h1>
+                <img src={logo} />
 
             </header>
             <div className="products-text">
-                <pre><h1>    Produtos: </h1></pre>
+                <pre><h1>    Conheça os nossos produtos: </h1></pre>
             </div>
 
             <div className="item">

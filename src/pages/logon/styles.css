@@ -7,13 +7,10 @@ body p{
     font-size: 20px;
 }
 
-body{
-    background-color: #C3C3C3;
-}
-
 .logon-container .products-text{
     width: 100%;
     padding: 30px;
+    color: #6B9D48;
 }
 
 .logon-container .item{
