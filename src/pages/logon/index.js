@@ -18,12 +18,11 @@ import Product from '../../components/product'
 function Logon () {
     return (
         <div className="logon-container">
-            <header className="logon-container">
+            <header>
                 <img src={logo} />
-
             </header>
             <div className="products-text">
-                <pre><h1>    Conheça os nossos produtos: </h1></pre>
+                <pre><h1>  Conheça os nossos produtos: </h1></pre>
             </div>
 
             <Product

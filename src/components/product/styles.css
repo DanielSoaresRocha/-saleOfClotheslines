@@ -4,7 +4,7 @@
 .logon-container ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
+    grid-gap: 10px;
     list-style: none;
 }
 
@@ -15,16 +15,16 @@
 }
 
 .logon-container .item ul li img{
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-left: 100px;
+    
 }
 
 
 .logon-container .item ul li .centro{
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 
@@ -38,9 +38,14 @@
 
 
 .logon-container .item ul li .centro img{
-    width: 200px;
+    width: 150px;
     height: 50px;
     border-radius: 10%;
+}
+
+.logon-container .item ul li .preco{
+    color: #6B9D48;
+    padding-left: 10px;
 }
 
 @media (min-width: 600px){
@@ -65,10 +70,9 @@
     height: 150px;
     border-radius: 10%; 
     }
-}
 
-
-.logon-container .item ul li .preco{
+    .logon-container .item ul li .preco{
     color: #6B9D48;
     padding-left: 20px;
+    }
 }

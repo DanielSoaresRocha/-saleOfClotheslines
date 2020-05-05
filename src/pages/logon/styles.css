@@ -1,8 +1,9 @@
-header{
+.logon-container header{
     width: 100%;
     text-align: center;
     color: #6B9D48;
 }
+
 body p{
     font-size: 20px;
 }
@@ -12,5 +13,23 @@ body p{
     padding: 30px;
     color: #6B9D48;
 }
+
+
+@media(max-width: 450px){
+    .logon-container header{
+        width: 100%;
+        text-align: center;
+        color: #6B9D48;
+    }
+
+    .logon-container header img{
+        max-width: 320px;
+    }
+    .logon-container .products-text pre h1{
+        font-size: 16px;
+    }
+
+}
+
 
 
