@@ -14,6 +14,33 @@ body p{
     color: #6B9D48;
 }
 
+.logon-container .textInformation{
+    width: 100%;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    color: #6B9D48;
+}
+.logon-container .packages{
+    text-align: center;
+    display: flex;
+    justify-content: center; /* centralizar itens na flex */
+}
+
+.logon-container .packages .package img{
+    max-width: 600px;
+    max-height: 500px;
+    border-radius: 30px;
+    margin: 40px;
+    margin-bottom: 0;
+}
+
+.logon-container .packages .package p{
+    color: #6B9D48;
+    font: bold;
+    font-size: 20px;
+}
+
 
 @media(max-width: 600px){
     .logon-container header{
@@ -25,9 +52,44 @@ body p{
     .logon-container header img{
         max-width: 320px;
     }
+
     .logon-container .products-text pre h1{
-        font-size: 16px;
+         font-size: 16px;
     }
+
+    .logon-container .textInformation{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .logon-container .packages{
+        display: block;
+        justify-items: center;
+        min-width: 500px;
+        text-align: center;
+    }
+
+    .logon-container .packages .package{
+       
+        min-width: 400px;
+    }
+
+    .logon-container .packages .package img{
+        max-width: 600px;
+        max-height: 400px;
+        border-radius: 20px;
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+    .logon-container .packages .package p{
+        color: #6B9D48;
+        font: bold;
+        font-size: 20px;
+    }
+
 
 }
 

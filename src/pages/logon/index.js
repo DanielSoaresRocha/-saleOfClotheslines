@@ -13,6 +13,10 @@ import corda2_2 from '../../assets/corda2_2.png'
 import corda3_3 from '../../assets/corda3_3.png'
 import corda4_4 from '../../assets/corda4_4.png'
 
+import pacote_1 from '../../assets/pacote_1.jpg'
+import pacote_2 from '../../assets/pacote_2.jpg'
+import pacote_3 from '../../assets/pacote_3.jpg'
+
 import Product from '../../components/product'
 
 function Logon () {
@@ -55,6 +59,30 @@ function Logon () {
                 description="Suporta até 1 ano em sol e chuva sem nenhum problema."
                 price="3,00"
             />
+
+            <div className="products-text">
+                <pre><h1>  Nossos pacotes: </h1></pre>
+            </div>
+
+            <div className="textInformation">
+                No valor de <strong>30 R$</strong> cada pacote
+            </div>
+
+            <div className="packages">
+                <div className="package">
+                    <img src={pacote_1} alt="pacote um" />
+                    <p>SEDA de 10 metros - 10 unidades</p>
+                </div>
+                <div className="package">
+                    <img src={pacote_2} alt="pacote um" />
+                    <p>SEDA verde de 10 metros - 5 unidades</p>
+                </div>
+                <div className="package">
+                    <img src={pacote_3} alt="pacote um" />
+                    <p>NYLON de 10 metros - 10 unidades</p>
+                </div>
+            </div>
+
         </div>
     );
 }
