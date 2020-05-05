@@ -59,7 +59,8 @@
 .logon-container .item ul li .preco{
     color: #6B9D48;
     text-align: center;
-    padding-left: 10px;
+    width: 120px;
+    font-size: 20px;  
 }
 
 @media (min-width: 600px){
@@ -87,9 +88,11 @@
     border-radius: 10%; 
     }
 
-    .logon-container .item ul li .preco{
+   .logon-container .item ul li .preco{
     color: #6B9D48;
-    padding-left: 20px;
+    text-align: center;
+    width: 300px;
+    font-size: 30px;  
     }
 }
 
