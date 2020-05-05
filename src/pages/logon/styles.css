@@ -65,7 +65,7 @@ body p{
 
 @media(max-width: 600px){
     .logon-container header{
-        width: 100%;
+        width: 500px;
         text-align: center;
         color: #6B9D48;
     }
