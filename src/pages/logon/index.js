@@ -19,7 +19,7 @@ function Logon () {
     return (
         <div className="logon-container">
             <header>
-                <img src={logo} />
+                <img src={logo} alt="Logo da página" />
             </header>
             <div className="products-text">
                 <pre><h1>  Conheça os nossos produtos: </h1></pre>

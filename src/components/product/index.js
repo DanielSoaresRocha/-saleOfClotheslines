@@ -7,25 +7,25 @@ function Product (props) {
         <div className="item">
             <ul>
                 <li>
-                    <img alt="corda" src={props.img}></img>
+                    <img src={props.img} alt="Imagem do produto" ></img>
 
                     <div className="centro">
                         <p>{props.title}</p>
-                        <img alt="corda" src={props.img2}></img>
+                        <img src={props.img2} alt="Imagem da corda"></img>
                         <br></br>
                         <p>{props.description}</p>
                     </div>
 
                     <div className="preco">
-                        <p>
-                            <pre>
+                        <pre>
+                            <div>
                                 <h1>
                                     R$<br></br>
                                     {props.price}<br></br>
                                 </h1>
                                 <h3>   unid.</h3>
-                            </pre>
-                        </p>
+                            </div>
+                        </pre>
                     </div>
                 </li>
             </ul>
