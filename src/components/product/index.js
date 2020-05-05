@@ -18,13 +18,11 @@ function Product (props) {
 
                     <div className="preco">
                         <pre>
-                            <div>
-                                <h1>
-                                    R$<br></br>
-                                    {props.price}<br></br>
-                                </h1>
-                                <h3>   unid.</h3>
-                            </div>
+                            <h1>
+                                R$<br></br>
+                                {props.price}<br></br>
+                            </h1>
+                            <h3>   unid.</h3>
                         </pre>
                     </div>
                 </li>
