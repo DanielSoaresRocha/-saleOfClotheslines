@@ -64,21 +64,17 @@ function Logon () {
                 <pre><h1>  Nossos pacotes: </h1></pre>
             </div>
 
-            <div className="textInformation">
-                No valor de <strong>30 R$</strong> cada pacote
-            </div>
-
             <div className="packages">
                 <div className="package">
-                    <p>SEDA de 10 metros - 10 unidades</p>
+                    <p>SEDA de 10 metros - 10 unidades: <strong>30 R$</strong></p>
                     <img src={pacote_1} alt="pacote um" />
                 </div>
                 <div className="package">
-                    <p>SEDA verde de 10 metros - 5 unidades</p>
+                    <p>SEDA verde de 10 metros - 5 unidades: <strong>30 R$</strong></p>
                     <img src={pacote_2} alt="pacote um" />
                 </div>
                 <div className="package">
-                    <p>NYLON de 10 metros - 10 unidades</p>
+                    <p>NYLON de 10 metros - 10 unidades: <strong>15 R$</strong></p>
                     <img src={pacote_3} alt="pacote um" />
                 </div>
             </div>

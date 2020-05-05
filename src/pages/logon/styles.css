@@ -21,14 +21,6 @@ body p{
     color: #6B9D48;
 }
 
-.logon-container .textInformation{
-    width: 100%;
-    font-size: 30px;
-    align-items: center;
-    text-align: center;
-    color: #6B9D48;
-}
-
 
 .logon-container .packages .package{
     width: 100%;
