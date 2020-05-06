@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Logon from './pages/logon'
 import './App.css'
+import Routes from './routes'
 
 function App () {
   return (
-    <Logon />
+    <Routes />
   );
 }
 

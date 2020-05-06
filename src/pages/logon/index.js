@@ -1,8 +1,13 @@
 import React from 'react';
 
 import './styles.css'
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
 
-import logo from '../../assets/logo.png'
+import { Menubar } from 'primereact/menubar';
+import Logo from '../../components/logo'
+
 import corda1 from '../../assets/corda1.png'
 import corda2 from '../../assets/corda2.png'
 import corda3 from '../../assets/corda3.png'
@@ -19,12 +24,26 @@ import pacote_3 from '../../assets/pacote_3.jpg'
 
 import Product from '../../components/product'
 
-function Logon () {
+function Logon (props) {
+    const menuitems = [
+        {
+            label: 'Home',
+            icon: 'pi pi-fw pi-home'
+        },
+        {
+            label: 'Sobre',
+            icon: 'pi pi-fw pi-user',
+            command: () => props.history.push('/about')
+        },
+        {
+            label: 'Contato',
+            icon: 'pi pi-fw pi-comment'
+        }
+    ];
     return (
         <div className="logon-container">
-            <header>
-                <img src={logo} alt="Logo da página" />
-            </header>
+            <Logo />
+            <Menubar model={menuitems} />
             <div className="products-text">
                 <pre><h1>  Conheça os nossos produtos: </h1></pre>
             </div>
