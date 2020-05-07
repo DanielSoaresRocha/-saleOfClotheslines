@@ -1,11 +1,7 @@
 import React from 'react';
 
 import './styles.css'
-import 'primereact/resources/themes/nova-light/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
-
-import { Menubar } from 'primereact/menubar';
+import { useHistory } from 'react-router-dom'
 import Logo from '../../components/logo'
 
 import corda1 from '../../assets/corda1.png'
@@ -24,26 +20,12 @@ import pacote_3 from '../../assets/pacote_3.jpg'
 
 import Product from '../../components/product'
 
-function Logon (props) {
-    const menuitems = [
-        {
-            label: 'Home',
-            icon: 'pi pi-fw pi-home'
-        },
-        {
-            label: 'Sobre',
-            icon: 'pi pi-fw pi-user',
-            command: () => props.history.push('/about')
-        },
-        {
-            label: 'Contato',
-            icon: 'pi pi-fw pi-comment'
-        }
-    ];
+function Logon () {
+    const history = useHistory()
+
     return (
         <div className="logon-container">
-            <Logo />
-            <Menubar model={menuitems} />
+            <Logo history={history} />
             <div className="products-text">
                 <pre><h1>  Conheça os nossos produtos: </h1></pre>
             </div>
