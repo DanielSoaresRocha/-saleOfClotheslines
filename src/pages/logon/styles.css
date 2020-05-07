@@ -80,17 +80,17 @@ body p{
     .logon-container .packages{
         display: block;
         justify-items: center;
-        min-width: 500px;
+        width: 100%;
         text-align: center;
     }
 
     .logon-container .packages .package{
-        min-width: 400px;
+        width: 100%;
     }
 
     .logon-container .packages .package img{
-        max-width: 600px;
-        max-height: 500px;
+        max-width: 500px;
+        max-height: 400px;
         border-radius: 20px;
         margin: auto;
         margin-bottom: 0;

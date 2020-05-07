@@ -1,7 +1,13 @@
+*{
+    border: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box; /*Não deixa ultrapassar */
+}
+
 .item{
+    display: block;
     width: 100%;
-    min-width: 500px;
-    border-radius: 4px;
     background-color: aliceblue;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -13,92 +19,91 @@
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.logon-container ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    list-style: none;
-}
-
-.logon-container .item ul li{
+.item .container{
     display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    position: relative;
 }
 
-.logon-container .item ul li img{
-    width: 100px;
-    height: 100px;
+.item .container img{
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 
-
-.logon-container .item ul li .centro{
-    width: 270px;
-    align-items: center;
-    padding: 10px;
-}
-
-
-.logon-container .item ul li p{
-    align-items: center;
+.item .container p{
+    font-size: 14px;
     color: #6B9D48;
     width: 100%;
-    font-size: 16px;
 }
 
-
-.logon-container .item ul li .centro img{
-    min-width: 150px;
-    min-height: 50px;
+.item .container .centro img{
     width: 150px;
     height: 50px;
-    border-radius: 10%;
+    border-radius: 0%;
 }
 
-.logon-container .item ul li .preco{
+.item .preco2{
     color: #6B9D48;
     text-align: center;
-    width: 120px;
-    font-size: 20px;  
+    visibility: visible;
 }
+
+
+.item .container .preco{
+    font-size: 0px;
+    visibility: hidden;
+}
+
 
 @media (min-width: 600px){
-    .logon-container .item ul li img{
+    .item .container{
+        justify-content: space-between;
+    }
+
+    .item .container .imagem {
+        width: 500px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item .container img{
         width: 300px;
         height: 300px;
-        margin-left: 50px;
+        border-radius: 50%;
     }
 
-    .logon-container .item ul li .centro{
-    padding: 50px;
-    width: 600px;
-    
+    .item .container p{
+        font-size: 24px;
+        color: #6B9D48;
+        max-width: 500px;
     }
-    
-    .logon-container .item ul li p{
-    max-width: 600px;
-    font-size: 24px;
+    .item .container .centro{
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
-    
-    .logon-container .item ul li .centro img{
+    .item .container .centro img{
     width: 400px;
     height: 150px;
-    border-radius: 10%; 
     }
 
-   .logon-container .item ul li .preco{
-    color: #6B9D48;
-    text-align: center;
-    width: 300px;
-    font-size: 30px;  
+    .item .preco2{
+        visibility: hidden;
     }
-}
 
-*{
-    border: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box; /*Não deixa ultrapassar */
+    .item .container .preco{
+        visibility: visible;
+        font-size: 30px;
+        text-align: center;
+        color: #6B9D48;
+
+        width: 400px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
