@@ -13,8 +13,9 @@ import { Menubar } from 'primereact/menubar';
 function Logo (props) {
     const menuitems = [
         {
-            label: 'Home',
-            icon: 'pi pi-fw pi-home'
+            label: 'Início',
+            icon: 'pi pi-fw pi-home',
+            command: () => props.history.push('/')
         },
         {
             label: 'Sobre',
