@@ -7,6 +7,9 @@ import Logo from '../../components/logo'
 export default function About () {
     const history = useHistory()
     return (
-        <Logo history={history} />
+        <>
+            <Logo history={history} />
+        Sobre nós
+        </>
     );
 }
