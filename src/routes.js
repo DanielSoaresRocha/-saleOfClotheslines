@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Logon from './pages/Logonf'
+import Logon from './pages/Logon'
 import About from './pages/About'
 
 export default function Routes () {
