@@ -72,11 +72,11 @@ function Logon () {
                 </div>
                 <div className="package">
                     <p>SEDA verde de 10 metros - 5 unidades: <strong>30 R$</strong></p>
-                    <img src={pacote_2} alt="pacote um" />
+                    <img src={pacote_2} alt="pacote dois" />
                 </div>
                 <div className="package">
                     <p>NYLON de 10 metros - 10 unidades: <strong>15 R$</strong></p>
-                    <img src={pacote_3} alt="pacote um" />
+                    <img src={pacote_3} alt="pacote três" />
                 </div>
             </div>
 
