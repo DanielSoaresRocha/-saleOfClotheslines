@@ -25,9 +25,12 @@ body p{
 .logon-container .packages .package{
     width: 100%;
     background-color: aliceblue;
-
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     transition: 0.3s;
+    border-radius: 8px;
 }
 
 .logon-container .packages .package:hover {
@@ -37,14 +40,14 @@ body p{
 .logon-container .packages{
     text-align: center;
     display: flex;
-    justify-content: center; /* centralizar itens na flex */
+    justify-content: space-between; /* centralizar itens na flex */
 }
 
 .logon-container .packages .package img{
     max-width: 600px;
     max-height: 500px;
     border-radius: 30px;
-    margin: 40px;
+    
     margin-bottom: 0;
 }
 
@@ -86,6 +89,7 @@ body p{
 
     .logon-container .packages .package{
         width: 100%;
+        margin:0px;
     }
 
     .logon-container .packages .package img{
