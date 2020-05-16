@@ -4,6 +4,10 @@
 
 ![desktop demo](https://github.com/DanielSoaresRocha/-saleOfClotheslines/blob/master/gif1.gif)
 
+### Is also responsive:
+
+![mobile demo](https://github.com/DanielSoaresRocha/-saleOfClotheslines/blob/master/gif2.gif)
+
 ### the website is available at this [link](https://canaa-varais.now.sh/).
 
 
