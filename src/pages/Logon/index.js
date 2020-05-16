@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { TimelineLite, Power3 } from 'gsap'
+import { TimelineLite, CSSPlugin, gsap } from 'gsap'
 
 import './styles.css'
 import { useHistory } from 'react-router-dom'
@@ -30,7 +30,8 @@ function Logon () {
     const tl = new TimelineLite()
 
     useEffect(() => {
-        console.log(img1_2.firstElementChild)
+        //console.log(img1_2.firstElementChild)
+        gsap.registerPlugin(CSSPlugin)
         tl.from(img1_2.firstElementChild, 2, { x: -3000 })
             .from(img1_2.lastElementChild, 2, { x: -3000 })
             .from(img3_4.firstElementChild, 2, { x: -3000 })
