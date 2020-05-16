@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { TweenMax, TimelineLite, Power3 } from 'gsap'
+import { TimelineLite, Power3 } from 'gsap'
 
 import logo from '../../assets/logo.png'
 
@@ -16,7 +16,7 @@ function Logo (props) {
     const tl = new TimelineLite()
 
     useEffect(() => {
-        tl.from(logoEffect, 1.2, { x: 1200, ease: Power3.easeOut })
+        tl.from(logoEffect, 2, { scale: 2, ease: Power3.easeOut })
     })
     const menuitems = [
         {
