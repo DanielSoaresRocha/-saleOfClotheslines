@@ -26,6 +26,7 @@ function Logon () {
 
     let img1_2 = useRef(null)
     let img3_4 = useRef(null)
+    let packges = useRef(null)
     const tl = new TimelineLite()
 
     useEffect(() => {
@@ -34,6 +35,7 @@ function Logon () {
             .from(img1_2.lastElementChild, 2, { x: -3000 })
             .from(img3_4.firstElementChild, 2, { x: -3000 })
             .from(img3_4.lastElementChild, 2, { x: -3000 })
+            .from(packges, 3, { y: 2000 })
     })
 
     return (
@@ -83,7 +85,7 @@ function Logon () {
                 <pre><h1>  Nossos pacotes: </h1></pre>
             </div>
 
-            <div className="packages">
+            <div className="packages" ref={el => packges = el}>
                 <div className="package">
                     <p>SEDA de 10 metros - 10 unidades: <strong>30 R$</strong></p>
                     <img src={pacote_1} alt="pacote um" />
